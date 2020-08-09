@@ -1,8 +1,9 @@
-/*You are hired by Pepsi to design their next generation Pepsi (Generation Next) machine, the reason being that Pepsi is going to drop the price of their product to a quarter(1/4th of a dollar = 25 cents).  The new machine will accept the industry standard nickel=5 cents, dime=10 cents and quarter=25 cents .  Design a totally synchronous FSM and write the RTL code for the same.  Assume the only inputs to the system are the type of change put in (nickel, dime, or quarter).  Your outputs will be two change amount(Change 1 & Change 2), and a Pepsi release signal that goes high when enough change has been put in. 
+/*You are hired by Pepsi to design their next generation Pepsi (Generation Next) machine, the reason being that Pepsi is going to drop the price of their product to a 
+quarter(1/4th of a dollar = 25 cents). The new machine will accept the industry standard nickel=5 cents, dime=10 cents and quarter=25 cents .  Design a totally synchronous FSM 
+and write the RTL code for the same.  Assume the only inputs to the system are the type of change put in (nickel, dime, or quarter). Your outputs will be two change a
+mount(Change 1 & Change 2), and a Pepsi release signal that goes high when enough change has been put in. 
 
-
-Example: If the total = 40 cents then Output : Pepsi = 1, Change 1 = 10 & Change 2 = 5 (Order of change can be interchangeable)
-*/
+Example: If the total = 40 cents then Output : Pepsi = 1, Change 1 = 10 & Change 2 = 5 (Order of change can be interchangeable) */
 
 module vending_fsm(input [1:0]din,input clock,reset,output reg p,
                  output reg[3:0]c1,c2);
